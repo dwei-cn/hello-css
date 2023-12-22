@@ -1,0 +1,192 @@
+body {
+    /* background: #6e28d9; */
+    background: linear-gradient(to right, skyblue, lightgreen);
+    padding: 0 24px;
+    color: white; /* Change my color to yellow */
+    margin: 0;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;   /*内边距, 内容和边框的距离 */
+  }
+  .box{
+    /*1. 尺寸*/
+    /* width: auto; */
+    width: 500px;
+    height: 350px;
+    /* border: 3px dotted white; */
+    border-radius: 8px;
+    padding: 5px 15px;   /*内边距, 内容和边框的距离*/
+    box-sizing: border-box;
+    margin: 25px auto;  /*垂直居中操作*/
+    
+    /*2. 背景处理*/
+    /* background-color: hotpink; */
+    background-image: url("https://preview.redd.it/n2eteszxcjsa1.png?width=1456&format=png&auto=webp&s=7898878ba51ce87c576e80ee979b0933d8b10e87");
+    background-size: cover; /* Adjust as needed */
+    background-position: center center;
+    box-shadow: 15px 15px 15px gray;
+    position: relative;
+    
+  }
+
+  .box h1 {
+    color: hotpink;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    text-shadow: 5px 5px 5px black;
+
+}
+  .box p {
+    color: hotpink;
+    text-indent: 2em;
+    font-family: 'consolas', sans-serif;
+    font-size: 18px;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  .box span {
+    color: greenyellow;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+
+    /*位置*/
+    /* position: absolute; */
+    position: fixed;
+    top: 200px;
+    left: 10px;
+
+  }
+
+  button {
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 4px;
+  }
+
+  button:hover{
+    color: red;
+  }
+
+  button:active{
+    color: lightgreen;
+  }
+  
+  a{
+    margin-left: 120px;
+  }
+  a:link{
+    color: lightgreen;
+  }
+
+  a:visited{
+    color: grey;
+  }
+
+  a:hover{
+    color: white;
+  }
+
+  a:active{
+    color: yellow;
+  }
+
+  li{
+    margin-left: 50px;
+  }
+  
+  li:nth-child(4){   /*可以单独编辑每个list item*/
+    background-color: yellow;
+    color: black;
+  }
+
+  li:nth-child(3n){   /*可以单独编辑每个3的倍数的list item*/
+    background-color: lightgreen;
+    color: black;
+  }
+
+  .fa-twitter{
+    color: aqua;
+  }
+
+  .fa-youtube{
+    color: red;
+  }
+
+  .fa-google{
+    color: yellow;
+  }
+
+  .fa-meta{
+    color: blue;
+  }
+
+  .box1{
+    margin-left: 150px;
+    border: 4px solid;
+    height: 250px;
+    width: 250px;
+    font-size: 225px;
+    text-align: center;
+    background: lightskyblue;
+    color: black;
+
+    transform: rotateX(180deg);
+    transform: scale(0.8);
+
+    /* transform: skew(20deg, 20deg) */
+    
+    /* transform:matrix(2, 0, 0, 2, 50, 50) */
+
+    /*
+    scaleX()
+    skewY()
+    skewX()
+    scaleY()
+    translateX()
+    translateY()
+    */
+
+    /* animation: mySlide;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-timing-function: ease; */
+
+  }
+
+  .box1:hover{
+    animation: 3s linear 0s 1 running myColorChange
+  }
+
+  /* .box1:active{
+    animation: 3s linear 0s 1 running myRotate
+  } */
+
+  @keyframes mySlide{
+    from{margin-left: 100%}
+    to{margin-left: 20%}
+  }
+
+  @keyframes myRotate{
+    50%{transform: rotateZ(360deg)}
+  }
+
+  @keyframes myColorChange{
+    
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+
+  }
+
