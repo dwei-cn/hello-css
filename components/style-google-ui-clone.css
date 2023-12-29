@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #555;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+
+}
+
+
+header a {
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+    text-decoration: inherit;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+.header_right .header_apps{
+    margin-right: 10px;
+
+}
+
+.mainBody{
+    flex: 1;
+    display: flex;
+    margin-top: 2%;
+    flex-direction: column;
+    
+}
+
+.mainBody img{
+    object-fit: contain;
+    height: 200;
+}
+
+.search_input{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
+}
+
+.search_input input{
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+.search_input input[list] {
+    border-bottom: none;
+}
+
+.search_input datalist {
+    width: 100%; /* Adjust the width as needed */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid lightgray;
+    border-top: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search_input datalist option {
+    padding: 10px; /* Adjust the padding as needed */
+    border-bottom: 1px solid lightgray;
+}
+
+.search_input .material-symbols-outlined{
+    color: gray;
+}
+
+.search_buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.search_buttons button{
+    margin: 15px 25px;
+    padding: 10px 15px;
+    border:none;
+    border-radius: 5px;
+    background-color: #f8f8f8f8;
+    outline: none;
+    cursor: pointer;
+
+}
